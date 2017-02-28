@@ -1,0 +1,23 @@
+# patsakpython
+x=raw_input("Please enter the sentence you want:")
+S=list(x)
+length=len(S)-1
+exmark=0
+Found=False
+while Found==False and length>=0:
+    if S[length]!="!":
+        break
+    else:
+        exmark+=1
+    length=length-1
+    
+print("Ta thamuastika sto telos ths protashs einai tosa:",exmark)
+A=[]
+for i in S:
+    if i!="!":
+        A.append(i)
+
+for i in range(exmark):
+    A.append("!")
+tel="".join(A)
+print("Finally the sentence is:",tel)
