@@ -1,0 +1,16 @@
+x=raw_input("Please enter the mathematical order:")
+S=list(x)
+if S[0]!="(":
+	print "please start with ("
+else:
+	anpar=0
+	klpar=0
+	for i in S:
+	    if i=="(":
+	        anpar+=1
+	    if i==")":
+	        klpar+=1
+	if anpar==klpar:
+	    print "TRUE"
+	else:
+	    print "FALSE"
